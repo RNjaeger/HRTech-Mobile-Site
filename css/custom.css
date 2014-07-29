@@ -1,0 +1,329 @@
+/*******************************************************************************************************
+This file serves as host for every custom CSS modification trough the HR Tech London 2015 event website 
+********************************************************************************************************/
+
+/*Header Definitions*/
+#header-background {
+	width: 100%;
+	min-height: 478px;
+	background: url(../img/desktop/header-bg.png) no-repeat center;
+	background-size: cover;
+}
+#header-container {
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 50px 0;
+	text-align: center;
+}
+#HRTech-logo {
+	padding-bottom: 200px;
+}
+#gettickets-button {
+	position: relative;
+	top: 35px;
+	left: -130px;
+}
+/*End of Header Definitions*/
+
+/*General class definitions*/
+.glegoo-text {
+	font-family: 'Glegoo', serif;
+}
+.ubuntu-text {
+	font-family: 'Ubuntu', sans-serif;
+}
+.blue {
+	color: #16aae1;
+}
+.white {
+	color: #fff;
+}
+a {
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+}
+.whitespace {
+	height: 50px;
+}
+/*End General class definitions*/
+
+/*Keynotes Section*/
+#keynotes-headline {
+	font-size: 52px;
+	font-weight: lighter;
+	text-align: center;
+}
+#keynotes-container {
+	max-width: 1050px;
+	margin: 0 auto;
+}
+.speakerphoto {
+	margin-bottom: 5px;
+}
+.speakerinfo-container {
+	padding: 0 5px;
+}
+.speaker-name {
+	font-size: 20px;
+	font-weight: bold;
+	color: #16aae1;
+	text-transform: uppercase;
+	line-height: 16px;
+}
+.company {
+	font-weight: bold;
+}
+.jobtitle, .company {
+	font-size: 12px;
+	font-style: italic;
+}
+.keynote-element-container, .col-md-2 {
+	padding: 0 !important;
+	max-width: 160px;
+	margin: 0 5px;
+}
+.keynote-element-container:hover {
+	color: #fff;
+	background: #16aae1;
+}
+.keynote-element-container:hover .speaker-name {
+	color: #fff;
+}
+#apply-voucher-button {
+	color: #fff;
+	background: #16aae1;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin: 0 auto;
+	margin-top: 40px;
+	max-width: 300px;
+	max-height: 60px;
+	text-align: center;
+	font-size: 15px;
+}
+
+@media (max-width:983px) {
+#keynotes-container {
+	max-width: 655px;
+	margin-right: 0;
+}
+#keynotes-headline {
+	position: relative;
+	right: 50px;
+}
+}
+/*End Keynotes Section*/
+/*Apply for Voucher Section*/
+#voucher-main-container {
+	min-height: 485px;
+	background: url(../img/desktop/voucher-bg.jpg) no-repeat;
+	background-size: cover;
+}
+#voucher-container {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 190px 0 0 0;
+}
+#voucher-headline-container {
+	padding: 45px 0 0 0;
+}
+#voucher-headline {
+	font-size: 39px;
+	font-weight: bolder;
+}
+#voucher-divider {
+	border-top: 1px solid #fff;
+	height: 20px;
+	max-width: 360px;
+	;
+}
+#voucher-subheadline {
+	font-size: 20px;
+}
+.voucherform-element {
+	height: 40px;
+	width: 300px;
+	background: #fff;
+	color: #000;
+	text-align: center;
+	font-size: 15px;
+	margin: 0 0 20px 0;
+}
+*::-webkit-input-placeholder {
+ color:#000;
+}
+*:-moz-placeholder {
+ color:#000;
+}
+*:-ms-input-placeholder { /* IE10+ */
+ color:#000;
+}
+#voucher-submitbutton {
+	border: 1px solid #fff;
+	border-radius: 2px;
+	color: #fff;
+	background: #2d6687;
+}
+
+@media (max-width:991px) {
+#voucher-container {
+	padding: 0 10px;
+}
+#voucher-headline-container {
+	padding: 10px;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+#voucher-divider {
+	margin: 0 auto;
+}
+}
+/*End Apply for Voucher Section*/
+/*Black Footer Section*/
+#black-footer-maincontainer {
+	background: #101010;
+	min-height: 180px;
+}
+#black-footer-container {
+	margin: 0 auto;
+	max-width: 860px;
+}
+#blackfooter-social-container {
+	padding: 45px 0 0 0;
+	color: #878686;
+}
+#blackfooter-social-icon-table {
+	position: relative;
+	left: -5px;
+}
+.blackfooter-social-icon {
+	margin: 0 15px 0 0;
+	width: 30px;
+	height: 30px;
+}
+#facebook-icon {
+	background: url(../img/facebook-icon-grey.png) no-repeat;
+	background-size: contain;
+}
+#facebook-icon:hover {
+	background: url(../img/facebook-icon-blue.png) no-repeat;
+}
+#twitter-icon {
+	background: url(../img/twitter-icon-grey.png) no-repeat;
+	background-size: contain;
+}
+#twitter-icon:hover {
+	background: url(../img/twitter-icon-blue.png) no-repeat;
+}
+#linkedin-icon {
+	background: url(../img/linkedin-icon-grey.png) no-repeat;
+	background-size: contain;
+}
+#linkedin-icon:hover {
+	background: url(../img/linkedin-icon-blue.png) no-repeat;
+}
+#flickr-icon {
+	background: url(../img/flickr-icon-grey.png) no-repeat;
+	background-size: contain;
+}
+#flickr-icon:hover {
+	background: url(../img/flickr-icon-pink.png) no-repeat;
+}
+#blackfooter-newsletter-container {
+	border-right: 1px solid #878686;
+	border-left: 1px solid #878686;
+	padding: 45px 10px 0 10px;
+	color: #878686;
+	min-height: 180px;
+}
+#newsletter-signupfield {
+	width: 100%;
+	border: 1px solid #878686;
+	background: #101010;
+	background: url(../img/mail-icon.png) left no-repeat;
+	padding: 3px 35px;
+}
+#newsletter-signupfield::-webkit-input-placeholder {
+ color:#878686;
+ padding-left:20px;
+}
+#newsletter-signupfield:-moz-placeholder {
+ color:#878686;
+ padding-left:20px;
+}
+#newsletter-signupfield:-ms-input-placeholder { /* IE10+ */
+color:#878686;
+ padding-left:20px;
+}
+#blackfooter-buttons-container {
+	border-right: 1px solid #878686;
+	padding: 45px 10px 0 10px;
+	min-height: 180px;
+}
+#apply-voucher-footerbutton, #register-now-footerbutton {
+	color: #fff;
+	background: #16aae1;
+	text-transform: uppercase;
+	padding: 5px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	max-width: 190px;
+	max-height: 60px;
+	text-align: center;
+	font-size: 15px;
+}
+#blackfooter-contactinfo-container {
+	padding: 45px 10px 0 10px;
+	color: #878686;
+}
+#blackfooter-contactinfo {
+	font-size: 12px;
+	position: relative;
+	top: -10px;
+}
+.fa-phone, fa-envelope {
+	font-size: 18px;
+	position: relative;
+	top: 3px;
+}
+
+@media (max-width:991px) {
+#black-footer-maincontainer {
+	display: none;
+}
+}
+/*End Black Footer Section*/
+/*Grey Footer Section*/
+#greyfooter-main-container {
+	min-height: 75px;
+	width: 100%;
+	background: #242424;
+}
+#greyfooter-container {
+	max-width: 860px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+#greyfooter-logo-container {
+	float: left;
+	position: relative;
+	top: -15px;
+}
+#greyfooter-copyright-container {
+	color: #878686;
+	margin: 0 auto;
+	position: relative;
+	left: 50px;
+	font-size: 12px;
+}
+#greyfooter-terms-container {
+	color: #878686;
+	font-size: 12px;
+	float: right;
+	position: relative;
+	top: -17px;
+}	 
+/*End Grey Footer Section*/

@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content=" HR Tech Europe, HR Conference" />
+<meta name="description" content="HR Tech Europe 2014 brings together the world's leading HR thinkers and organizations in Europe over 2 days in Amsterdam.">
+<meta name="author" content="TesseracT - bottyan.tamas@web-developer.hu">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR Tech Europe 2015 | Europe's #1 Conference on the Future of HR</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Hover effects -->
+<link href="css/hover.css" rel="stylesheet">
+<!--Google fonts-->
+<link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<!--Icon set-->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Custom rules -->
+<link href="css/m-custom.css" rel="stylesheet">
+<script src="js/form-validator.js"></script>
+
+<!-- SLICK-MASTER CAROUSEL INCLUDES -->
+<link rel="stylesheet" type="text/css" href="vendor/slick-master/slick/slick.css" media="screen"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+
+<!-- Include Sidr bundled CSS theme -->
+<link rel="stylesheet" href="vendor/sidr/stylesheets/jquery.sidr.dark.css">
+
+<!-- SLICK-MASTER CAROUSEL -->
+<script src="js/slick-master-carousel.js"></script>
+
+<!-- SIDR RIGHT MENU -->
+<script src="js/sidr-right-menu.js"></script>
+
+<!-- W3C FORM VALIDATOR -->
+<script>
+  function validateForm() {
+    var x = document.forms["newsletter-signup-form"]["newsletter-email-address"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script>
+<!-- END: W3C FORM VALIDATOR -->
+
+<style type="text/css">
+table {
+  margin: 0 auto;
+}
+.bold {
+  font-weight: bold;
+}
+.view-button {
+  padding: 30px 0 30px 0;
+}
+/* SIDR */
+#sidr-menu-container {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  margin-top: -65px;
+  min-width: 320px;
+  max-width: 520px;
+  height: 65px;
+  background-color: rgb(32, 32, 32);
+  border-bottom: 2px solid rgb(0, 0, 0)
+}
+#sidr {
+  min-width: 260px;
+}
+.sidr-menuitem a:hover {
+  color: rgb(40,194,231);
+}
+@media (min-width:360px) {
+  #sidr {
+  min-width: 300px;
+}
+}
+@media (min-width:480px) {
+  #sidr {
+  min-width: 420px;
+}
+}
+@media (min-width:520px) {
+  #sidr {
+  min-width: 460px;
+}
+}
+#sidr li {
+  text-transform: uppercase;
+}
+#menu-hrtech-logo {
+  float: left;
+  margin: 10px;
+}
+#menu-bars {
+  width: 60px;
+  height: 63px;
+  float: right;
+  margin: 0 auto;
+  border-left: 1px solid rgb(91, 91, 91)
+}
+#menu-bars i {
+  padding: 17px;
+  color: rgb(91, 91, 91);
+}
+#menu-bars i:hover{
+  padding: 17px;
+  color: rgb(40, 194, 231);
+}
+/* END: SIDR */
+/* HEADER */
+#header-unleash-your-people {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 35px;
+  margin-top: 30px;
+  text-shadow: 1px 0 0 #fff;
+}
+#header-fastest-growing {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 20px;
+  margin: 35px 0;
+}
+/* END HEADER */
+/* STATISTICS CAROUSEL */
+#statistics-carousel-container {
+  min-height: 500px;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+#statistics-carousel-container-title {
+  font-family: Oswald;
+  font-size: 30px;
+  margin: 30px auto 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #878686;
+}
+#statistics-carousel {
+  margin: 25px 0 50px 0;
+}
+.statistics-carousel-image {
+  color: rgb(230, 3, 3);
+  font-family: 'Oswald', sans-serif;
+  font-size: 72px;
+  border: 2px solid rgb(230, 3, 3);
+  border-radius: 900px;
+  padding: 10px;
+  width: 130px;
+  margin: 0 auto;
+}
+.statistics-carousel-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(230, 3, 3);
+  margin: 30px 0;
+}
+.statistics-description {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+/* END STATISTICS CAROUSEL*/
+/* SPEAKERS */
+#speakers-container {
+  text-align: center;
+  background-color: rgb(6, 34, 44);
+  margin: 0 auto;
+  max-width: 520px;
+}
+#speakers-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size:  30px;
+  color: white;
+  text-align: center;
+  padding: 27px 0 20px 0;
+}
+.speakers-element {
+  height: 365px;
+  width: 280px;
+  margin: 20px auto 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+.speaker-photo img {
+  width: 280px;
+}
+.speaker-name {
+  font-family: 'Oswald', 'Ubuntu', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+/* SPEAKERS */
+/* AGENDA STAGES */
+#stages-carousel-container {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+#stages-carousel {
+  margin: 25px auto 25px auto;
+}
+#stages-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  padding: 30px 0 7px 0;
+  margin: 0 auto;
+}
+.stage-image {
+  min-height: 150px;
+}
+.stage-image img {
+  margin: 0 auto;
+  height: 150px;
+}
+.stage-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 30px 0 0px 0;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.stage-name p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.stage-description {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  margin: 0 20px 10px 20px;
+}
+.stage-description p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+/* END AGENDA STAGES */
+
+/* TESTIMONIALS */
+#testimonials-container {
+  background: url(img/mobile/testimonials-bg.jpg) no-repeat center;
+  background-size: cover;
+  max-width: 520px;
+  min-height: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+#testimonials-quote-sign img {
+  margin: 30px auto 0px auto;
+}
+.testimonials-quote {
+  max-width: 500px;
+  height: 150px;
+  line-height: 150px;
+  margin: 0 20px;
+}
+.testimonials-quote p {
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+}
+.testimonials-logo {
+  height: 60px;
+  line-height: 60px;
+}
+.testimonials-logo img {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+/* END TESTIMONIALS*/
+
+/* VIDEOS */
+#video-container {
+  max-width: 520px;
+  height: 385px;
+  margin: 0 auto;
+}
+#video-container-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 5px;
+}
+.video-image {
+  width: 100%;
+}
+.video-image img {
+  margin: 0 auto;
+}
+.video-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  padding: 30px 0 10px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+/* END: VIDEOS*/
+
+/* VENUE */
+#venue-container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 7px 15px 0 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(6, 34, 44);
+  text-align: center;
+}
+.venue-container-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 300;
+}
+#venue-container-title-hotels {
+  margin-top: 0px;
+}
+#venue-container p {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.venue-button {
+  margin: 30px 0;
+}
+#google-maps-amsterdam {
+  width: 280px;
+  height: 375px;
+}
+/* END: VENUE */
+
+/* TWEETER */
+#tweeter-container {
+  padding: 30px 20px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+#tweeter-container img {
+  margin-bottom: 30px;
+}
+/* END: TWEETER */
+
+/* SPONSORS */
+#sponsors-container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 10px 15px 0 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(6, 34, 44);
+  text-align: center;
+}
+#sponsors-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.sponsor {
+  width: 140px;
+  height: 100px;
+}
+.sponsor-image {
+  width: 100%;
+  height: 100%;
+}
+.sponsor img {
+    vertical-align: middle;
+}
+.sponsor-grey {
+  background-color: rgb(31, 57, 66);
+}
+.sponsors-button {
+  margin: 30px 0;
+}
+#cornerstone {
+  background-image: url(img/mobile/sponsors/cornerstone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#ibm {
+  background-image: url(img/mobile/sponsors/ibm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#kronos {
+  background-image: url(img/mobile/sponsors/kronos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#oracle {
+  background-image: url(img/mobile/sponsors/oracle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#successfactors {
+  background-image: url(img/mobile/sponsors/successfactors.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#workday {
+  background-image: url(img/mobile/sponsors/workday.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cornerstone:hover {
+  background-color: rgb(229, 229, 229);
+  background-image: url(img/mobile/sponsors/cornerstone-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#ibm:hover {
+  background-color: rgb(229, 229, 229);
+  background-image: url(img/mobile/sponsors/ibm-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#kronos:hover {
+  background-color: rgb(229, 229, 229);
+  background-image: url(img/mobile/sponsors/kronos-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#oracle:hover {
+  background-color: rgb(229, 229, 229);
+  background-image: url(img/mobile/sponsors/oracle-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#successfactors:hover {
+  background-color: rgb(229, 229, 229);
+  background-image: url(img/mobile/sponsors/successfactors-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#workday:hover {
+  background-color: rgb(229, 229, 229);
+  background-image: url(img/mobile/sponsors/workday-hover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* END: SPONSORS*/
+
+/* CONTACT */
+#contact-container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 23px 15px;
+  color: rgb(53, 53, 53);
+  background-color: rgb(229, 229, 229);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#contact-title {
+  font-size: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  max-width: 280px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+#contact-signup {
+  font-size: 20px;
+  padding: 20px 0 35px 0;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  max-width: 280px;
+  margin: 0 auto;
+}
+#newsletter-signupfield-amsterdam {
+  width: 260px;
+  height: 45px;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+#newsletter-submit-button {
+  /*background: url(img/chevron.png);*/
+  width: 15px;
+  position: relative;
+  top: 6px;
+}
+#contact-follow {
+  font-size: 20px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  max-width: 280px;
+  margin: 0 auto;
+}
+#contact-follow p{
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+.blackfooter-social-icon {
+  margin: 0 15px;
+}
+#contact-general-enquiries {
+  font-size: 20px;
+  padding-top: 20px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+#image-phone, #image-envelope {
+  position: relative;
+  top: -2px;
+}
+#image-envelope {
+  margin-right: 7px;
+}
+/* END: CONTACT */
+
+/* FOOTER */
+#footer {
+  max-width: 520px;
+  text-align: center;
+  height: 40px;
+  background-color: rgb(32, 32, 32);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 11px;
+  color: rgb(134, 127, 127);
+  padding-top: 13px;
+}
+/* END: FOOTER */
+
+
+
+</style>
+</head>
+<body>
+<div id="mobile-wrapper">
+  <div id="sidr-menu-container">
+    <div id="menu-hrtech-logo"><img src="img/hrtech-mobile-logo.png" alt="HR Tech Europe 23-24 October 2014"></div>
+    <div id="menu-bars"><a id="right-menu" href="#sidr"><i class="fa fa-bars fa-2x"></i></a></div>
+  </div>
+  <div id="sidr">
+    <ul>
+      <li class="sidr-menuitem"><a href="http://amsterdam.hrtecheurope.com"><i class="fa fa-home"></i> Home</a></li>
+      <li class="sidr-menuitem"><a href="speakers">Speakers</a></li>
+      <li class="sidr-menuitem"><a href="agenda">Agenda</a></li>
+      <li class="sidr-menuitem"><a href="sponsors">Sponsors</a></li>
+        <li class="dropdown sidr-menuitem">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Get involved <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li class="sidr-menuitem"><a href="tickets">Buy a Ticket</a></li>
+            <li class="sidr-menuitem"><a href="https://www.etouches.com/ereg/newreg.php?eventid=80926&">Register VIP</a></li>
+            <li class="sidr-menuitem"><a href="applysponsor">Sponsor</a></li>
+            <li class="sidr-menuitem"><a href="venue">See the Venue</a></li>
+            <li class="sidr-menuitem"><a href="applymedia">Apply as Media</a></li>
+            <li class="sidr-menuitem"><a href="blogsquad">Join the Blog Squad</a></li>
+            <li class="sidr-menuitem"><a href="partner">Become a Partner</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+<!-- HEADER -->
+<div id="header-background">
+  <div id="header-container">
+    <h1 id="header-unleash-your-people">Unleash<br> your<br> people!</h1>
+    <div id="header-fastest-growing">The Fastest Growing<br>HR Conference in the World!</div>
+    <a href="tickets"><img id="register-today-button" class="push" alt="get-your-tickets" src="img/mobile/register-today-button.png"></a><br>
+  </div>
+</div>
+
+<!-- END HEADER -->
+<!-- STATISTICS CAROUSEL -->
+<div id="statistics-carousel-container">
+  <h1 id="statistics-carousel-container-title">Europe's most<br> important HR event</h1>
+  <div id="statistics-carousel" class="slick-master-carousel">
+    <!-- carousel element -->
+    <div class="statistics-carousel-element">
+      <div class="statistics-carousel-image">02</div>
+      <div class="statistics-carousel-title">Exciting days</div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="statistics-carousel-element">
+      <div class="statistics-carousel-image">99</div>
+      <div class="statistics-carousel-title">Speakers</div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="statistics-carousel-element">
+      <div class="statistics-carousel-image">32</div>
+      <div class="statistics-carousel-title">Product demos</div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="statistics-carousel-element">
+      <div class="statistics-carousel-image">20</div>
+      <div class="statistics-carousel-title">Million people influenced</div>
+    </div>
+    <!-- END: carousel element -->
+  </div>
+  <div class="statistics-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dol.</div>
+</div>
+<!-- END STATISTICS CAROUSEL -->
+
+<!-- SPEAKERS -->
+<div id="speakers-container">
+  <h1 id="speakers-title">Speakers</h1>
+  <!-- SPEAKERS ELEMENT -->
+  <div class="speakers-element">
+    <div class="speaker-photo"><a href="speakers#HamelG"><img src="img/speakers/HamelG.jpg" alt="Gary Hamel photo"></a></div>
+    <div class="speaker-name">Gary Hamel</div>
+    <div class="speaker-company">The Management Lab</div>
+  </div>
+  <!-- END: SPEAKERS ELEMENT -->
+  <!-- SPEAKERS ELEMENT -->
+  <div class="speakers-element">
+    <div class="speaker-photo"><a href="speakers#McCandlessD"><img src="img/speakers/McCandlessD.jpg" alt="David McCandless photo"></a></div>
+    <div class="speaker-name">David McCandless</div>
+    <div class="speaker-company">Information is Beautiful</div>
+  </div>
+  <!-- END: SPEAKERS ELEMENT -->
+  <!-- SPEAKERS ELEMENT -->
+  <div class="speakers-element">
+    <div class="speaker-photo"><a href="speakers#AgyeiY"><img src="img/speakers/AgyeiY.jpg" alt="Yvonne Agyei photo"></a></div>
+    <div class="speaker-name">Yvonne Agyei</div>
+    <div class="speaker-company">Google</div>
+  </div>
+  <!-- END: SPEAKERS ELEMENT -->
+  <!-- SPEAKERS ELEMENT -->
+  <div class="speakers-element">
+    <div class="speaker-photo"><a href="speakers#TurrellM"><img src="img/speakers/TurrellM.jpg" alt="Mark Turrell photo"></a></div>
+    <div class="speaker-name">Mark Turrell</div>
+    <div class="speaker-company">Orcasci</div>
+  </div>
+  <!-- END: SPEAKERS ELEMENT -->
+  <div class="view-button"><a href="speakers"><img class="push" src="img/mobile/view-all-the-speakers.png" alt="VIEW ALL THE SPEAKERS"></a></div>
+</div>
+<!-- END SPEAKERS -->
+
+<!-- AGENDA STAGES -->
+<div id="stages-carousel-container">
+  <h1 id="stages-title">Agenda</h1>
+  <div id="stages-carousel" class="slick-master-carousel">
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-main-stage">
+      <div class="stage-image"><a href="agenda#mainstage"><img src="img/stages/main-stage.gif" alt="Agenda Main Stage"></a></div>
+      <div class="stage-name"><p>Main Stage</p></div>
+      <div class="stage-description"><p></p></div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-hrtechnology">
+      <div class="stage-image"><a href="agenda#hrtechnology"><img src="img/stages/hr-technology.gif" alt="Agenda HR Technology"></a></div>
+      <div class="stage-name"><p>HR Technology</p></div>
+      <div class="stage-description"><p>This session will highlight Cloud transitions, Predictive Analytics coupled with Lean Six Sigma, and an array of HR Solution experiences delivered by Senior Enterprise Practitioners.</p></div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-future-of-workforce-learning">
+      <div class="stage-image"><a href="agenda#futureofwork"><img src="img/stages/future-of-workforce-learning.gif" alt="Agenda Future of Workforce Learning"></a></div>
+      <div class="stage-name"><p>Future of Workforce Learning</p></div>
+      <div class="stage-description"><p>We take a look at some of the technologies out there, and examine from a perspective of practical experience how technology is bringing about a revolution in the world of workplace learning.</p></div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-hr-shared-services-and-outsourcing">
+      <div class="stage-image"><a href="agenda#sharedservices"><img src="img/stages/hr-shared-services-and-outsourcing.gif" alt="Agenda HR Shared Services and Outsourcing"></a></div>
+      <div class="stage-name"><p>HR Shared Services and Outsourcing</p></div>
+      <div class="stage-description"><p>Engage and see how some of the most agile and successful businesses develop and retain customers and talent while leveraging their Shared Service practice.</p></div>
+    </div>
+    <!-- END: carousel element -->    
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-social-enterprise">
+      <div class="stage-image"><a href="agenda#socialenterprise"><img src="img/stages/social-enterprise.gif" alt="Agenda Social Enterprise"></a></div>
+      <div class="stage-name"><p>Social Enterprise</p></div>
+      <div class="stage-description"><p>Greater workforce collaboration is the key to the future; how you manage the transition and select from the myriad of available applications are just a few of the issues to be discussed here.</p></div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-talent-management">
+      <div class="stage-image"><a href="agenda#talentmanagement"><img src="img/stages/talent-management.gif" alt="Agenda Talent Management"></a></div>
+      <div class="stage-name"><p>Talent Management</p></div>
+      <div class="stage-description"><p>How can technology systems and applications help? What is the link between a successful organization and its people, its purpose and its predictive analytics?</p></div>
+    </div>
+    <!-- END: carousel element -->    
+        <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-future-of-work">
+      <div class="stage-image"><a href="agenda#futureofwork"><img src="img/stages/future-of-work.gif" alt="Agenda Future of Work"></a></div>
+      <div class="stage-name"><p>Future of Work</p></div>
+      <div class="stage-description"><p>Gamification, social networks and an abundance of data are all competing for attention in the work environment. Listen to the experts on what the future holds.</p></div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-cloud-technology">
+      <div class="stage-image"><a href="agenda#cloudtechnology"><img src="img/stages/cloud-technology.gif" alt="Agenda Cloud Technology"></a></div>
+      <div class="stage-name"><p>Cloud Technology</p></div>
+      <div class="stage-description"><p>Should a company“ rip and replace” its traditional on-premises system with a unified cloud solution for HR and talent management?</p></div>
+    </div>
+    <!-- END: carousel element -->    
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-labs-and-executive-briefings">
+      <div class="stage-image"><a href="agenda#labs"><img src="img/stages/labs-and-executive-briefings.gif" alt="Agenda Labs and Executive Briefings"></a></div>
+      <div class="stage-name"><p>Labs and Executive Briefings</p></div>
+      <div class="stage-description"><p>Our Labs will be led and presented by some of the most well known thought leaders and experts in the global HR Tech marketplace.</p></div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="stages-carousel-element" id="agenda-product-demo-room">
+      <div class="stage-image"><a href="agenda#productdemo"><img src="img/stages/product-demo.gif" alt="Agenda Product Demo Room"></a></div>
+      <div class="stage-name"><p>Product Demo Room</p></div>
+      <div class="stage-description"><p>Expect to hear some of the latest developments from leading and innovative suppliers.</p></div>
+    </div>
+    <!-- END: carousel element -->    
+
+  </div>
+  <div class="view-button"><a href="agenda"><img class="push" src="img/mobile/view-agenda.png" alt="VIEW ALL THE SPEAKERS"></a></div>
+</div>
+<!-- END: AGENDA STAGES -->
+
+<!-- TESTIMONIALS -->
+<div id="testimonials-container">
+  <div id="testimonials-quote-sign"><img src="img/mobile/quote-sign.png" alt="quote"></div>
+  <div id="testimonials-carousel" class="slick-master-carousel">
+    <div class="testimonials-carousel-element">
+      <div class="testimonials-quote"><p>HR Tech Europeprovides a comprehensive overview of what goes on across the globe… very inspiring and motivating.</p></div>
+      <div class="testimonials-logo"><img src="img/mobile/testimonials/timewarner-2.png" alt="TimeWarner"></div>
+    </div>
+    <div class="testimonials-carousel-element">
+      <div class="testimonials-quote"><p>HR Tech Europe in my eyes is the best conference in the HR space globally!</p></div>
+      <div class="testimonials-logo"><img src="img/mobile/testimonials/xerox-2.png" alt="Xerox"></div>
+    </div>
+    <div class="testimonials-carousel-element">
+      <div class="testimonials-quote"><p>HR Tech Europe has grown in less than 3 years. My expectations were delivered and surpassed. Looking forward to 2014!</p></div>
+      <div class="testimonials-logo"><img src="img/mobile/testimonials/kps-2.png" alt="KPN"></div>
+    </div>
+  </div>
+</div>
+<!-- END: TESTIMONIALS -->
+
+<!-- VIDEOS -->
+<div id="video-container">
+  <h1 id="video-container-title">Videos</h1>
+  <div class="video-carousel slick-master-carousel">
+    <!-- carousel element -->
+    <div class="video-element">
+      <div class="video-image"><a href="http://www.youtube.com/embed/HaD35IlYOpE?rel=0" target="_blank"><img src="img/mobile/video-images/hrtech-europe-2013-teaser.png" alt="HRTECH EUROPE 2013 TEASER"></a></div>
+      <div class="video-title">HR Tech Europe 2013 Teaser</div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="video-element">
+      <div class="video-image"><a href="http://www.youtube.com/embed/kjnHAsaQJEk?rel=0" target="_blank"><img src="img/mobile/video-images/hrtech-europe-2012.png" alt="HRTECH EUROPE 2012"></a></div>
+      <div class="video-title">HR Tech Europe 2012</div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="video-element">
+      <div class="video-image"><a href="http://www.youtube.com/embed/WvpbDfMxDzs?rel=0" target="_blank"><img src="img/mobile/video-images/hrtech-europe-snapshot.png" alt="HRTECH EUROPE SNAPSHOT"></a></div>
+      <div class="video-title">HR Tech Europe Snapshot</div>
+    </div>
+    <!-- END: carousel element -->
+    <!-- carousel element -->
+    <div class="video-element">
+      <div class="video-image"><a href="http://www.youtube.com/embed/WWTaP1AXucA?rel=0" target="_blank"><img src="img/mobile/video-images/customer-insights.png" alt="CUSTOMER INSIGHTS"></a></div>
+      <div class="video-title">Customer Insights</div>
+    </div>
+    <!-- END: carousel element -->
+  </div>
+</div>
+<!-- END: VIDEOS -->
+
+<!-- VENUE -->
+<div id="venue-container">
+  <h1 class="venue-container-title">Venue</h1>
+  <p>Amsterdam is one of the top financial, HR and technology centers in Europe.</p>
+  <p>Amsterdam's premium conference venue, the Amsterdam RAI, provides a perfect space for exhibiting, learning and connecting.</p>
+  <iframe id="google-maps-amsterdam" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2437.534523875116!2d4.888596!3d52.34259000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa08f37a724d09338!2sAmsterdam+RAI!5e0!3m2!1shu!2sus!4v1406638727729" style="border:0"></iframe>
+  <a href="venue"><img class="venue-button push" src="img/mobile/get-travel-tips-button.png" alt="Get Travel Tips"></a>
+  <h1 class="venue-container-title" id="venue-container-title-hotels">Hotels</h1>
+  <p>Amsterdam is one of the top financial, HR and technology centers in Europe.</p>
+  <p>Amsterdam's premium conference venue, the Amsterdam RAI, provides a perfect space for exhibiting, learning and connecting.</p>
+  <img src="img/mobile/hotel-room.jpg" alt="Hotel Room"><br>
+  <a href="https://www.rai-hotelservice.com/compass/external/index.cfm?meeting_ID=2008&amp;Meeting_ID_Code=860252097&amp;utm_medium=&amp;utm_source=&amp;utm_campaign=" target="_blank"><img class="venue-button push" src="img/mobile/find-a-hotel-button.png" alt="Find a Hotel"></a>
+</div>
+<!-- END: VENUE -->
+
+<!-- TWEETER -->
+<div id="tweeter-container">
+  <img src="img/mobile/tweeter-logos.png" alt="Tweeter powered by sdworx">
+  <a class="twitter-timeline" href="https://twitter.com/hashtag/hrtecheurope" data-widget-id="461485618808102913">#hrtecheurope Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<!-- END: TWEETER -->
+
+<!-- SPONSORS -->
+<div id="sponsors-container">
+  <h1 id="sponsors-title">Sponsors</h1>
+  <table>
+    <tr>
+      <td class="sponsor sponsor-grey"><a href="http://www.cornerstoneondemand.com/" target="_blank"><div class="sponsor-image" id="cornerstone"></div></a></td>
+      <td class="sponsor"><a href="http://www.ibm.com/" target="_blank"><div class="sponsor-image" id="ibm"></div></a></td>
+    </tr>
+    <tr>
+      <td class="sponsor"><a href="http://www.kronos.com" target="_blank"><div class="sponsor-image" id="kronos"></div></a></td>
+      <td class="sponsor sponsor-grey"><a href="http://www.oracle.com" target="_blank"><div class="sponsor-image" id="oracle"></div></a></td>
+    </tr>
+    <tr>
+      <td class="sponsor sponsor-grey"><a href="http://www.successfactors.com/en_us.html" target="_blank"><div class="sponsor-image" id="successfactors"></div></a></td>
+      <td class="sponsor"><a href="http://www.workday.com" target="_blank"><div class="sponsor-image" id="workday"></div></a></td>
+    </tr>
+  </table>
+  
+  <a href="sponsors"><img class="sponsors-button push" src="img/mobile/view-all-sponsors-button.png" alt="View all sponsors"></a>
+</div>
+<!-- END: SPONSORS -->
+
+<!-- CONTACT -->
+<div id="contact-container">
+  <h1 id="contact-title">Contact</h1>
+  <div id="contact-signup">
+    <p>Sign Up for Updates</p>
+    <form name="newsletter-signup-form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return validateForm()">
+      <input type="hidden" name="oid" value="00DD0000000nwgk" />
+      <input type="hidden" name="retURL" value="http://amsterdam.hrtecheurope.com/thankyou.html" />
+      <input type="text" id="newsletter-signupfield-amsterdam" name="newsletter-email-address" placeholder="enter your email address">
+      <input type="image" id="newsletter-submit-button" src="img/chevron.png" alt="OK" />
+    </form>
+  </div>
+  <div id="contact-follow">
+    <p>Follow Us</p>
+    <p class="bold">#hrtecheurope</p>
+    <div id="socialicons">
+      <table>
+        <tr>
+          <td><a href="https://www.facebook.com/hrtecheu" target="_blank">
+            <div class="blackfooter-social-icon hover" id="facebook-icon"></div>
+            </a></td>
+          <td><a href="https://twitter.com/hrtecheurope" target="_blank">
+            <div class="blackfooter-social-icon hover" id="twitter-icon"></div>
+            </a></td>
+          <td><a href="http://www.linkedin.com/groups/HR-Technology-Europe-Human-Resources-3930182/about" target="_blank">
+            <div class="blackfooter-social-icon hover" id="linkedin-icon"></div>
+            </a></td>
+          <td><a href="http://www.slideshare.net/hrtecheurope">
+            <div class="blackfooter-social-icon hover" id="flickr-icon"></div>
+            </a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="contact-general-enquiries">
+    <p>General Enquiries</p>
+    <p><img id="image-phone" src="img/phone-icon.png" alt="phone: "> +36 1 201 14 69<br>
+    <img id="image-envelope" src="img/envelope-icon.png" alt="mail: "><a href="mailto:hrn@hrneurope.com" class="hover"> hrn@hrneurope.com</a></p>
+  </div>
+</div>
+<!-- END: CONTACT -->
+<!-- FOOTER -->
+  <div id="footer">Copyright &copy; 2014 HRN Europe. All Rights Reserved.</div>
+<!-- END: FOOTER -->
+
+
+</div>
+
+<script type="text/javascript">
+  $('#apply-for-voucher-form').parsley();
+</script> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+<!-- SLICK-MASTER CAROUSEL JAVASCRIPT -->
+<script type="text/javascript" src="vendor/slick-master/slick/slick.min.js"></script>
+<!-- Include the Sidr JS -->
+<script src="vendor/sidr/jquery.sidr.min.js"></script>
+
+</body>
+</html>
